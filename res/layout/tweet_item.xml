@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivProfileImage"
+        android:text="@string/foo_label" 
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvUserName"
+        android:layout_below="@+id/tvUserName"
+        android:text="This is the tweet body" 
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/btnRetweet"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tvBody"
+        android:layout_toRightOf="@+id/ivProfileImage"
+        android:background="@drawable/ic_retweet"
+        android:layout_marginRight="20dp" />
+    <ToggleButton
+        android:id="@+id/btnFav"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tvBody"
+        android:layout_toRightOf="@+id/btnRetweet"
+        android:textOn="" android:textOff=""
+        android:background="@drawable/button_fav" />
+
+</RelativeLayout>
