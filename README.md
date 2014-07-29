@@ -7,4 +7,4 @@ TwitterAppClient
 * Theme the tabs to fit a "twitter" color scheme
 * On compose screen, the "post" button should be customized (images or drawables) with a pressed state
 * Add inline "favorite" and "reply" icons to each tweet. Favorite icon should toggle when pressed.
-(homework1.gif)
+* (homework1.gif)
